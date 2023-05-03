@@ -17,82 +17,12 @@ export default function Sidebar({menuSidebar, submenuSidebar}) {
             'icone': 'fas fa-bullseye',
             'tagMenu': 'gestao_metas',
             'submenu': [
-                {'menu': 'Geral', 'url': route('admin.gestao-metas.geral.index'), 'tagSubmenu': 'geral'},
+                {'menu': 'Geral', 'url': route('home'), 'tagSubmenu': 'geral'},
                 {
                     'menu': 'Meta dos Vendedores',
-                    'url': route('admin.gestao-metas.vendedores.index'),
+                    'url': route('home'),
                     'tagSubmenu': 'vendedores'
-                }, {
-                    'menu': 'Meta dos Gerentes',
-                    'url': route('admin.gestao-metas.gerentes.index'),
-                    'tagSubmenu': 'gerentes'
                 },
-            ]
-        },
-        {
-            'menu': 'Faturamento',
-            'icone': 'fas fa-dollar-sign',
-            'tagMenu': 'faturamento',
-            'submenu': [
-                {'menu': 'Vendedores', 'url': route('admin.faturamento.vendedores.index'), 'tagSubmenu': 'vendedores'},
-                {'menu': 'Produtos', 'url': route('admin.faturamento.produtos.index'), 'tagSubmenu': 'produtos'},
-                // {'menu': 'Clientes', 'url': route('admin.faturamento.clientes.index'), 'tagSubmenu': 'clientes'},
-            ]
-        },
-        {
-            'menu': 'Simuladores',
-            'icone': 'fas fa-truck',
-            'tagMenu': 'simuladores',
-            'submenu': [
-                {'menu': 'Simulador CIF', 'url': route('admin.simuladores.cif.index'), 'tagSubmenu': 'cif'},
-                {'menu': 'Simulador FOB', 'url': route('admin.simuladores.fob.index'), 'tagSubmenu': 'fob'},
-                {'menu': 'Cadastros', 'url': route('admin.simuladores.cadastros.index'), 'tagSubmenu': 'cadastros'},
-                {'menu': 'Clientes', 'url': route('admin.simuladores.clientes.index'), 'tagSubmenu': 'clientes'},
-                {'menu': 'Produtos', 'url': route('admin.simuladores.produtos.index'), 'tagSubmenu': 'produtos'},
-            ]
-        },
-        {
-            'menu': 'Análises',
-            'icone': 'fas fa-chart-pie',
-            'tagMenu': 'analises',
-            'submenu': [
-                {'menu': 'Prazo Médio', 'url': route('admin.analise.prazo-medio.index'), 'tagSubmenu': 'prazo_medio'},
-                {'menu': 'M.C.', 'url': route('admin.analise.mc.index'), 'tagSubmenu': 'mc'},
-                {
-                    'menu': 'Desconto Médio',
-                    'url': route('admin.analise.desconto-medio.index'),
-                    'tagSubmenu': 'desconto_medio'
-                },
-            ]
-        },
-        {
-            'menu': 'Relatórios',
-            'icone': 'fas fa-file',
-            'tagMenu': 'relatorios',
-            'submenu': [
-                {
-                    'menu': 'Importar Arquivo',
-                    'url': route('admin.importacao.importar.index'),
-                    'tagSubmenu': 'importar'
-                },{
-                    'menu': 'Histórico de Importação',
-                    'url': route('admin.importacao.historico.index'),
-                    'tagSubmenu': 'historico'
-                },
-            ]
-        },
-        {
-            'menu': 'Usuários',
-            'icone': 'fas fa-users',
-            'tagMenu': 'usuarios',
-            'submenu': [
-                {'menu': 'Vendedores', 'url': route('admin.usuarios.vendedores.index'), 'tagSubmenu': 'vendedores'},
-                {
-                    'menu': 'Gerentes Regional',
-                    'url': route('admin.usuarios.gerente-regional.index'),
-                    'tagSubmenu': 'gerente_regional'
-                },
-                {'menu': 'Admins', 'url': route('admin.usuarios.admins.index'), 'tagSubmenu': 'admins'},
             ]
         },
     ];
@@ -103,7 +33,7 @@ export default function Sidebar({menuSidebar, submenuSidebar}) {
                 <div>
                     <a href="/">
                         <div className="text-center py-3 bg-white">
-                            <img src="/storage/crm/imagens/logo.png" className="" width="200" alt="main_logo"/>
+                            <img src="/storage/crm/imagens/logo.png" className="" width="200" alt="logo"/>
                         </div>
                     </a>
                 </div>
