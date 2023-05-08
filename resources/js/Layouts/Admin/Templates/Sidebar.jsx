@@ -13,15 +13,15 @@ export default function Sidebar({menuSidebar, submenuSidebar}) {
             ]
         },
         {
-            'menu': 'Gestão de Metas',
+            'menu': 'Compressores',
             'icone': 'fas fa-bullseye',
-            'tagMenu': 'gestao_metas',
+            'tagMenu': 'compressores',
             'submenu': [
-                {'menu': 'Geral', 'url': route('home'), 'tagSubmenu': 'geral'},
+                {'menu': 'Cadastrados', 'url': route('admin.compressores.index'), 'tagSubmenu': 'cadastrados'},
                 {
-                    'menu': 'Meta dos Vendedores',
-                    'url': route('home'),
-                    'tagSubmenu': 'vendedores'
+                    'menu': 'Novo',
+                    'url': route('admin.compressores.create'),
+                    'tagSubmenu': 'novo'
                 },
             ]
         },
